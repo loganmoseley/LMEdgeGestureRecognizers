@@ -10,4 +10,9 @@
 
 @interface LMViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIView *mainView;
+@property (nonatomic, strong) IBOutlet UIView *utilityView;
+
+@property (nonatomic) CGFloat utilityAnimationDuration;
+
 @end
