@@ -18,6 +18,7 @@
 		70D9DEAC16B5AF6400F8DD69 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D9DEAB16B5AF6400F8DD69 /* Default-568h@2x.png */; };
 		70D9DEAF16B5AF6400F8DD69 /* LMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9DEAE16B5AF6400F8DD69 /* LMViewController.m */; };
 		70D9DEB216B5AF6400F8DD69 /* LMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D9DEB016B5AF6400F8DD69 /* LMViewController.xib */; };
+		70D9DEBD16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		70D9DEAD16B5AF6400F8DD69 /* LMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMViewController.h; sourceTree = "<group>"; };
 		70D9DEAE16B5AF6400F8DD69 /* LMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMViewController.m; sourceTree = "<group>"; };
 		70D9DEB116B5AF6400F8DD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LMViewController.xib; sourceTree = "<group>"; };
+		70D9DEBA16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMEdgePanGestureRecognizer.h; sourceTree = "<group>"; };
+		70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMEdgePanGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 				70D9DEAD16B5AF6400F8DD69 /* LMViewController.h */,
 				70D9DEAE16B5AF6400F8DD69 /* LMViewController.m */,
 				70D9DEB016B5AF6400F8DD69 /* LMViewController.xib */,
+				70D9DEBE16B5B4E900F8DD69 /* Edge Gesture Recognizers */,
 				70D9DE9C16B5AF6400F8DD69 /* Supporting Files */,
 			);
 			path = EdgeGestures;
@@ -105,6 +109,15 @@
 				70D9DEAB16B5AF6400F8DD69 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70D9DEBE16B5B4E900F8DD69 /* Edge Gesture Recognizers */ = {
+			isa = PBXGroup;
+			children = (
+				70D9DEBA16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.h */,
+				70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */,
+			);
+			name = "Edge Gesture Recognizers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				70D9DEA216B5AF6400F8DD69 /* main.m in Sources */,
 				70D9DEA616B5AF6400F8DD69 /* LMAppDelegate.m in Sources */,
 				70D9DEAF16B5AF6400F8DD69 /* LMViewController.m in Sources */,
+				70D9DEBD16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
