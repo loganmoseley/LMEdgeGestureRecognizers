@@ -38,8 +38,8 @@
 		70D9DEAD16B5AF6400F8DD69 /* LMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMViewController.h; sourceTree = "<group>"; };
 		70D9DEAE16B5AF6400F8DD69 /* LMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMViewController.m; sourceTree = "<group>"; };
 		70D9DEB116B5AF6400F8DD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LMViewController.xib; sourceTree = "<group>"; };
-		70D9DEBA16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMEdgePanGestureRecognizer.h; sourceTree = "<group>"; };
-		70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMEdgePanGestureRecognizer.m; sourceTree = "<group>"; };
+		70D9DEBA16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMEdgePanGestureRecognizer.h; path = ../LMEdgePanGestureRecognizer.h; sourceTree = "<group>"; };
+		70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LMEdgePanGestureRecognizer.m; path = ../LMEdgePanGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
