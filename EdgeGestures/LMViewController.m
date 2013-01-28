@@ -31,7 +31,7 @@
     self.mainViewEdgePanRecognizer = edgePan;
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleMainViewTapped:)];
-//    [tap setEnabled:NO];
+    [tap setEnabled:NO];
     [self.mainView addGestureRecognizer:tap];
     self.mainViewTapRecognizer = tap;
 }
@@ -98,7 +98,7 @@
         
     } else if (recognizer.state == UIGestureRecognizerStateChanged) {
         
-        CGPoint initialTranslation = CGPointMake(self.mainView.transform.tx, self.mainView.transform.ty);
+        CGPoint initialTranslation = CGPointMake(initialTransform.tx, initialTransform.ty);
         CGPoint translation = [recognizer translationInView:recognizer.view];
         CGPoint viewTranslation = CGPointMake(translation.x+initialTranslation.x, translation.y+initialTranslation.y);
         
