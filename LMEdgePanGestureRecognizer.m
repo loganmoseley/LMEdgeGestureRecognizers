@@ -31,14 +31,18 @@ static LMEdgePanGestureRecognizerEdge const kRecognizedEdgesDefault = LMEdgePanG
     return YES;
 }
 
+// Returns YES, except when the arg is an EdgePanGestureRecognizer
 - (BOOL)canPreventGestureRecognizer:(UIGestureRecognizer *)preventedGestureRecognizer
 {
-    return YES;
+    BOOL p = ![preventedGestureRecognizer isKindOfClass:[LMEdgePanGestureRecognizer class]];
+    return p;
 }
 
+// Returns NO, except when the arg is an EdgePanGestureRecognizer{
 - (BOOL)canBePreventedByGestureRecognizer:(UIGestureRecognizer *)preventingGestureRecognizer
 {
-    return NO;
+    BOOL p = [preventingGestureRecognizer isKindOfClass:[self class]];
+    return p;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
