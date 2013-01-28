@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70D10CF816B65AD30062617E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D10CEA16B65AD30062617E /* Default-568h@2x.png */; };
+		70D10CF916B65AD30062617E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D10CEB16B65AD30062617E /* Default.png */; };
+		70D10CFA16B65AD30062617E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D10CEC16B65AD30062617E /* Default@2x.png */; };
+		70D10CFC16B65AD30062617E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D10CEF16B65AD30062617E /* InfoPlist.strings */; };
+		70D10CFD16B65AD30062617E /* LMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D10CF116B65AD30062617E /* LMViewController.xib */; };
+		70D10CFE16B65AD30062617E /* LMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D10CF416B65AD30062617E /* LMAppDelegate.m */; };
+		70D10CFF16B65AD30062617E /* LMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D10CF616B65AD30062617E /* LMViewController.m */; };
+		70D10D0016B65AD30062617E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D10CF716B65AD30062617E /* main.m */; };
+		70D10D0C16B65DA70062617E /* LMEdgePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D10D0B16B65DA70062617E /* LMEdgePanGestureRecognizer.m */; };
 		70D9DE9616B5AF6400F8DD69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D9DE9516B5AF6400F8DD69 /* UIKit.framework */; };
 		70D9DE9816B5AF6400F8DD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D9DE9716B5AF6400F8DD69 /* Foundation.framework */; };
 		70D9DE9A16B5AF6400F8DD69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D9DE9916B5AF6400F8DD69 /* CoreGraphics.framework */; };
-		70D9DEA016B5AF6400F8DD69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D9DE9E16B5AF6400F8DD69 /* InfoPlist.strings */; };
-		70D9DEA216B5AF6400F8DD69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9DEA116B5AF6400F8DD69 /* main.m */; };
-		70D9DEA616B5AF6400F8DD69 /* LMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9DEA516B5AF6400F8DD69 /* LMAppDelegate.m */; };
-		70D9DEA816B5AF6400F8DD69 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D9DEA716B5AF6400F8DD69 /* Default.png */; };
-		70D9DEAA16B5AF6400F8DD69 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D9DEA916B5AF6400F8DD69 /* Default@2x.png */; };
-		70D9DEAC16B5AF6400F8DD69 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D9DEAB16B5AF6400F8DD69 /* Default-568h@2x.png */; };
-		70D9DEAF16B5AF6400F8DD69 /* LMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9DEAE16B5AF6400F8DD69 /* LMViewController.m */; };
-		70D9DEB216B5AF6400F8DD69 /* LMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D9DEB016B5AF6400F8DD69 /* LMViewController.xib */; };
-		70D9DEBD16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70D10CEA16B65AD30062617E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		70D10CEB16B65AD30062617E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		70D10CEC16B65AD30062617E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		70D10CED16B65AD30062617E /* EdgeGesturesExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EdgeGesturesExample-Info.plist"; sourceTree = "<group>"; };
+		70D10CEE16B65AD30062617E /* EdgeGesturesExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EdgeGesturesExample-Prefix.pch"; sourceTree = "<group>"; };
+		70D10CF016B65AD30062617E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70D10CF216B65AD30062617E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LMViewController.xib; sourceTree = "<group>"; };
+		70D10CF316B65AD30062617E /* LMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAppDelegate.h; sourceTree = "<group>"; };
+		70D10CF416B65AD30062617E /* LMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAppDelegate.m; sourceTree = "<group>"; };
+		70D10CF516B65AD30062617E /* LMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMViewController.h; sourceTree = "<group>"; };
+		70D10CF616B65AD30062617E /* LMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMViewController.m; sourceTree = "<group>"; };
+		70D10CF716B65AD30062617E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70D10D0A16B65DA70062617E /* LMEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMEdgePanGestureRecognizer.h; sourceTree = SOURCE_ROOT; };
+		70D10D0B16B65DA70062617E /* LMEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMEdgePanGestureRecognizer.m; sourceTree = SOURCE_ROOT; };
 		70D9DE9116B5AF6400F8DD69 /* EdgeGesturesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdgeGesturesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D9DE9516B5AF6400F8DD69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		70D9DE9716B5AF6400F8DD69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70D9DE9916B5AF6400F8DD69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		70D9DE9D16B5AF6400F8DD69 /* EdgeGesturesExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EdgeGesturesExample-Info.plist"; sourceTree = "<group>"; };
-		70D9DE9F16B5AF6400F8DD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		70D9DEA116B5AF6400F8DD69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70D9DEA316B5AF6400F8DD69 /* EdgeGesturesExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EdgeGesturesExample-Prefix.pch"; sourceTree = "<group>"; };
-		70D9DEA416B5AF6400F8DD69 /* LMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAppDelegate.h; sourceTree = "<group>"; };
-		70D9DEA516B5AF6400F8DD69 /* LMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAppDelegate.m; sourceTree = "<group>"; };
-		70D9DEA716B5AF6400F8DD69 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		70D9DEA916B5AF6400F8DD69 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		70D9DEAB16B5AF6400F8DD69 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		70D9DEAD16B5AF6400F8DD69 /* LMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMViewController.h; sourceTree = "<group>"; };
-		70D9DEAE16B5AF6400F8DD69 /* LMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMViewController.m; sourceTree = "<group>"; };
-		70D9DEB116B5AF6400F8DD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LMViewController.xib; sourceTree = "<group>"; };
-		70D9DEBA16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMEdgePanGestureRecognizer.h; path = ../LMEdgePanGestureRecognizer.h; sourceTree = "<group>"; };
-		70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LMEdgePanGestureRecognizer.m; path = ../LMEdgePanGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70D10CE916B65AD30062617E /* EdgeGesturesExample */ = {
+			isa = PBXGroup;
+			children = (
+				70D10CF316B65AD30062617E /* LMAppDelegate.h */,
+				70D10CF416B65AD30062617E /* LMAppDelegate.m */,
+				70D10CF516B65AD30062617E /* LMViewController.h */,
+				70D10CF616B65AD30062617E /* LMViewController.m */,
+				70D10CF116B65AD30062617E /* LMViewController.xib */,
+				70D10D0216B65AEF0062617E /* Supporting Files */,
+			);
+			path = EdgeGesturesExample;
+			sourceTree = "<group>";
+		};
+		70D10D0216B65AEF0062617E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70D10CED16B65AD30062617E /* EdgeGesturesExample-Info.plist */,
+				70D10CEF16B65AD30062617E /* InfoPlist.strings */,
+				70D10CEE16B65AD30062617E /* EdgeGesturesExample-Prefix.pch */,
+				70D10CF716B65AD30062617E /* main.m */,
+				70D10CEA16B65AD30062617E /* Default-568h@2x.png */,
+				70D10CEB16B65AD30062617E /* Default.png */,
+				70D10CEC16B65AD30062617E /* Default@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70D10D0D16B65DAC0062617E /* Edge Gesture Recognizers */ = {
+			isa = PBXGroup;
+			children = (
+				70D10D0A16B65DA70062617E /* LMEdgePanGestureRecognizer.h */,
+				70D10D0B16B65DA70062617E /* LMEdgePanGestureRecognizer.m */,
+			);
+			name = "Edge Gesture Recognizers";
+			path = EdgeGesturesExample;
+			sourceTree = "<group>";
+		};
 		70D9DE8616B5AF6300F8DD69 = {
 			isa = PBXGroup;
 			children = (
-				70D9DE9B16B5AF6400F8DD69 /* EdgeGestures */,
+				70D10D0D16B65DAC0062617E /* Edge Gesture Recognizers */,
+				70D10CE916B65AD30062617E /* EdgeGesturesExample */,
 				70D9DE9416B5AF6400F8DD69 /* Frameworks */,
 				70D9DE9216B5AF6400F8DD69 /* Products */,
 			);
@@ -81,43 +119,6 @@
 				70D9DE9916B5AF6400F8DD69 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		70D9DE9B16B5AF6400F8DD69 /* EdgeGestures */ = {
-			isa = PBXGroup;
-			children = (
-				70D9DEA416B5AF6400F8DD69 /* LMAppDelegate.h */,
-				70D9DEA516B5AF6400F8DD69 /* LMAppDelegate.m */,
-				70D9DEAD16B5AF6400F8DD69 /* LMViewController.h */,
-				70D9DEAE16B5AF6400F8DD69 /* LMViewController.m */,
-				70D9DEB016B5AF6400F8DD69 /* LMViewController.xib */,
-				70D9DEBE16B5B4E900F8DD69 /* Edge Gesture Recognizers */,
-				70D9DE9C16B5AF6400F8DD69 /* Supporting Files */,
-			);
-			path = EdgeGestures;
-			sourceTree = "<group>";
-		};
-		70D9DE9C16B5AF6400F8DD69 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				70D9DE9D16B5AF6400F8DD69 /* EdgeGesturesExample-Info.plist */,
-				70D9DE9E16B5AF6400F8DD69 /* InfoPlist.strings */,
-				70D9DEA116B5AF6400F8DD69 /* main.m */,
-				70D9DEA316B5AF6400F8DD69 /* EdgeGesturesExample-Prefix.pch */,
-				70D9DEA716B5AF6400F8DD69 /* Default.png */,
-				70D9DEA916B5AF6400F8DD69 /* Default@2x.png */,
-				70D9DEAB16B5AF6400F8DD69 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		70D9DEBE16B5B4E900F8DD69 /* Edge Gesture Recognizers */ = {
-			isa = PBXGroup;
-			children = (
-				70D9DEBA16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.h */,
-				70D9DEBB16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m */,
-			);
-			name = "Edge Gesture Recognizers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,11 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70D9DEA016B5AF6400F8DD69 /* InfoPlist.strings in Resources */,
-				70D9DEA816B5AF6400F8DD69 /* Default.png in Resources */,
-				70D9DEAA16B5AF6400F8DD69 /* Default@2x.png in Resources */,
-				70D9DEAC16B5AF6400F8DD69 /* Default-568h@2x.png in Resources */,
-				70D9DEB216B5AF6400F8DD69 /* LMViewController.xib in Resources */,
+				70D10CF816B65AD30062617E /* Default-568h@2x.png in Resources */,
+				70D10CF916B65AD30062617E /* Default.png in Resources */,
+				70D10CFA16B65AD30062617E /* Default@2x.png in Resources */,
+				70D10CFC16B65AD30062617E /* InfoPlist.strings in Resources */,
+				70D10CFD16B65AD30062617E /* LMViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,28 +188,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70D9DEA216B5AF6400F8DD69 /* main.m in Sources */,
-				70D9DEA616B5AF6400F8DD69 /* LMAppDelegate.m in Sources */,
-				70D9DEAF16B5AF6400F8DD69 /* LMViewController.m in Sources */,
-				70D9DEBD16B5B0E000F8DD69 /* LMEdgePanGestureRecognizer.m in Sources */,
+				70D10CFE16B65AD30062617E /* LMAppDelegate.m in Sources */,
+				70D10CFF16B65AD30062617E /* LMViewController.m in Sources */,
+				70D10D0016B65AD30062617E /* main.m in Sources */,
+				70D10D0C16B65DA70062617E /* LMEdgePanGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		70D9DE9E16B5AF6400F8DD69 /* InfoPlist.strings */ = {
+		70D10CEF16B65AD30062617E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				70D9DE9F16B5AF6400F8DD69 /* en */,
+				70D10CF016B65AD30062617E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		70D9DEB016B5AF6400F8DD69 /* LMViewController.xib */ = {
+		70D10CF116B65AD30062617E /* LMViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				70D9DEB116B5AF6400F8DD69 /* en */,
+				70D10CF216B65AD30062617E /* en */,
 			);
 			name = LMViewController.xib;
 			sourceTree = "<group>";
@@ -270,8 +271,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EdgeGestures/EdgeGesturesExample-Prefix.pch";
-				INFOPLIST_FILE = "EdgeGestures/EdgeGesturesExample-Info.plist";
+				GCC_PREFIX_HEADER = "EdgeGesturesExample/EdgeGesturesExample-Prefix.pch";
+				INFOPLIST_FILE = "EdgeGesturesExample/EdgeGesturesExample-Info.plist";
 				PRODUCT_NAME = EdgeGesturesExample;
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,8 +282,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EdgeGestures/EdgeGesturesExample-Prefix.pch";
-				INFOPLIST_FILE = "EdgeGestures/EdgeGesturesExample-Info.plist";
+				GCC_PREFIX_HEADER = "EdgeGesturesExample/EdgeGesturesExample-Prefix.pch";
+				INFOPLIST_FILE = "EdgeGesturesExample/EdgeGesturesExample-Info.plist";
 				PRODUCT_NAME = EdgeGesturesExample;
 				WRAPPER_EXTENSION = app;
 			};
@@ -307,6 +308,7 @@
 				70D9DEB716B5AF6400F8DD69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
