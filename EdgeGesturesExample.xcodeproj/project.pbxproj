@@ -22,14 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		70D9DE9116B5AF6400F8DD69 /* EdgeGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdgeGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D9DE9116B5AF6400F8DD69 /* EdgeGesturesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdgeGesturesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D9DE9516B5AF6400F8DD69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		70D9DE9716B5AF6400F8DD69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		70D9DE9916B5AF6400F8DD69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		70D9DE9D16B5AF6400F8DD69 /* EdgeGestures-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EdgeGestures-Info.plist"; sourceTree = "<group>"; };
+		70D9DE9D16B5AF6400F8DD69 /* EdgeGesturesExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EdgeGesturesExample-Info.plist"; sourceTree = "<group>"; };
 		70D9DE9F16B5AF6400F8DD69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70D9DEA116B5AF6400F8DD69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		70D9DEA316B5AF6400F8DD69 /* EdgeGestures-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EdgeGestures-Prefix.pch"; sourceTree = "<group>"; };
+		70D9DEA316B5AF6400F8DD69 /* EdgeGesturesExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EdgeGesturesExample-Prefix.pch"; sourceTree = "<group>"; };
 		70D9DEA416B5AF6400F8DD69 /* LMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAppDelegate.h; sourceTree = "<group>"; };
 		70D9DEA516B5AF6400F8DD69 /* LMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAppDelegate.m; sourceTree = "<group>"; };
 		70D9DEA716B5AF6400F8DD69 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		70D9DE9216B5AF6400F8DD69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70D9DE9116B5AF6400F8DD69 /* EdgeGestures.app */,
+				70D9DE9116B5AF6400F8DD69 /* EdgeGesturesExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,10 +100,10 @@
 		70D9DE9C16B5AF6400F8DD69 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				70D9DE9D16B5AF6400F8DD69 /* EdgeGestures-Info.plist */,
+				70D9DE9D16B5AF6400F8DD69 /* EdgeGesturesExample-Info.plist */,
 				70D9DE9E16B5AF6400F8DD69 /* InfoPlist.strings */,
 				70D9DEA116B5AF6400F8DD69 /* main.m */,
-				70D9DEA316B5AF6400F8DD69 /* EdgeGestures-Prefix.pch */,
+				70D9DEA316B5AF6400F8DD69 /* EdgeGesturesExample-Prefix.pch */,
 				70D9DEA716B5AF6400F8DD69 /* Default.png */,
 				70D9DEA916B5AF6400F8DD69 /* Default@2x.png */,
 				70D9DEAB16B5AF6400F8DD69 /* Default-568h@2x.png */,
@@ -123,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		70D9DE9016B5AF6400F8DD69 /* EdgeGestures */ = {
+		70D9DE9016B5AF6400F8DD69 /* EdgeGesturesExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70D9DEB516B5AF6400F8DD69 /* Build configuration list for PBXNativeTarget "EdgeGestures" */;
+			buildConfigurationList = 70D9DEB516B5AF6400F8DD69 /* Build configuration list for PBXNativeTarget "EdgeGesturesExample" */;
 			buildPhases = (
 				70D9DE8D16B5AF6400F8DD69 /* Sources */,
 				70D9DE8E16B5AF6400F8DD69 /* Frameworks */,
@@ -135,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = EdgeGestures;
+			name = EdgeGesturesExample;
 			productName = EdgeGestures;
-			productReference = 70D9DE9116B5AF6400F8DD69 /* EdgeGestures.app */;
+			productReference = 70D9DE9116B5AF6400F8DD69 /* EdgeGesturesExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +150,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Logan Moseley";
 			};
-			buildConfigurationList = 70D9DE8B16B5AF6300F8DD69 /* Build configuration list for PBXProject "EdgeGestures" */;
+			buildConfigurationList = 70D9DE8B16B5AF6300F8DD69 /* Build configuration list for PBXProject "EdgeGesturesExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				70D9DE9016B5AF6400F8DD69 /* EdgeGestures */,
+				70D9DE9016B5AF6400F8DD69 /* EdgeGesturesExample */,
 			);
 		};
 /* End PBXProject section */
@@ -270,9 +270,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EdgeGestures/EdgeGestures-Prefix.pch";
-				INFOPLIST_FILE = "EdgeGestures/EdgeGestures-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "EdgeGestures/EdgeGesturesExample-Prefix.pch";
+				INFOPLIST_FILE = "EdgeGestures/EdgeGesturesExample-Info.plist";
+				PRODUCT_NAME = EdgeGesturesExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -281,9 +281,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EdgeGestures/EdgeGestures-Prefix.pch";
-				INFOPLIST_FILE = "EdgeGestures/EdgeGestures-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "EdgeGestures/EdgeGesturesExample-Prefix.pch";
+				INFOPLIST_FILE = "EdgeGestures/EdgeGesturesExample-Info.plist";
+				PRODUCT_NAME = EdgeGesturesExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -291,7 +291,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70D9DE8B16B5AF6300F8DD69 /* Build configuration list for PBXProject "EdgeGestures" */ = {
+		70D9DE8B16B5AF6300F8DD69 /* Build configuration list for PBXProject "EdgeGesturesExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70D9DEB316B5AF6400F8DD69 /* Debug */,
@@ -300,7 +300,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		70D9DEB516B5AF6400F8DD69 /* Build configuration list for PBXNativeTarget "EdgeGestures" */ = {
+		70D9DEB516B5AF6400F8DD69 /* Build configuration list for PBXNativeTarget "EdgeGesturesExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				70D9DEB616B5AF6400F8DD69 /* Debug */,
