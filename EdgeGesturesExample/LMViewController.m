@@ -90,7 +90,7 @@
 - (void)handleMainViewBottomEdgePan:(LMEdgePanGestureRecognizer *)recognizer
 {
     CGFloat kRevealHeight = CGRectGetHeight(self.utilityView.frame);
-    CGAffineTransform initialTransform;
+    static CGAffineTransform initialTransform;
     
     if (recognizer.state == UIGestureRecognizerStateBegan) {
         
