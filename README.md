@@ -66,4 +66,4 @@ Logan Moseley
 
 ## License
 
-LMEdgeGestureRecognizer is available under the MIT license. See the LICENSE file for more info.ddfdfdffdsafds
+LMEdgeGestureRecognizer is available under the MIT license. See the LICENSE file for more info.
