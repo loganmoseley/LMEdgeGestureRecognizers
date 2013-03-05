@@ -18,7 +18,7 @@ static CGFloat kBackTransitionOptDuration = 0.2;
 static CGFloat kBackTransitionMaxDuration = 0.4;
 static CGFloat kFastPanVelocity = 250.;
 
-float fclampf(float x, float min, float max) {
+float __lmEdgePanNavController_fclampf(float x, float min, float max) {
 	if (min > max)
 		return fmaxf(max, fminf(x, min));
 	else // expected
@@ -75,7 +75,7 @@ float fclampf(float x, float min, float max) {
         CGPoint initialTranslation = CGPointMake(initialTransform.tx, initialTransform.ty);
         CGPoint translation = [recognizer translationInView:recognizer.view];
         CGPoint targetTranslation = CGPointMake(translation.x+initialTranslation.x, translation.y+initialTranslation.y);
-        CGFloat x = fclampf(targetTranslation.x, 0, CGRectGetWidth(recognizer.view.frame) - 5);
+        CGFloat x = __lmEdgePanNavController_fclampf(targetTranslation.x, 0, CGRectGetWidth(recognizer.view.frame) - 5);
         CGAffineTransform transform = CGAffineTransformMakeTranslation(x*damper, 0);
         panningView.transform = transform;
         
@@ -108,7 +108,7 @@ float fclampf(float x, float min, float max) {
             if (currentVelocity.x > kFastPanVelocity)
             {
                 duration = remaining / currentVelocity.x;
-                duration = fclampf(duration, kBackTransitionMinDuration, kBackTransitionMaxDuration);
+                duration = __lmEdgePanNavController_fclampf(duration, kBackTransitionMinDuration, kBackTransitionMaxDuration);
             }
             else
             {
@@ -134,7 +134,7 @@ float fclampf(float x, float min, float max) {
             if (currentVelocity.x < -kFastPanVelocity)
             {
                 duration = currentTranslation.x / currentVelocity.x;
-                duration = fclampf(fabsf(duration), kBackTransitionMinDuration, kBackTransitionMaxDuration);
+                duration = __lmEdgePanNavController_fclampf(fabsf(duration), kBackTransitionMinDuration, kBackTransitionMaxDuration);
             }
             else
             {
