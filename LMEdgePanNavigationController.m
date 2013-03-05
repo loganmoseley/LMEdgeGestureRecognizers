@@ -64,7 +64,7 @@ float fclampf(float x, float min, float max) {
         
         initialTransform = panningView.transform;
         canGoBack = self.viewControllers.count > 1;
-        [self placeBackView];
+        [self prepareBackView];
         
     } else if (recognizer.state == UIGestureRecognizerStateChanged) {
         
@@ -123,8 +123,7 @@ float fclampf(float x, float min, float max) {
                              completion:^(BOOL finished) {
                                  [self popViewControllerAnimated:NO];
                                  panningView.transform = CGAffineTransformIdentity;
-                                 
-                                 self.leftEdgePanRecognizer.touchMargin = kLeftPanTouchMargin;
+                                 [self.backView removeFromSuperview];
                              }];
         }
         else // stay on current
@@ -147,73 +146,49 @@ float fclampf(float x, float min, float max) {
                                  panningView.transform = CGAffineTransformIdentity;
                              }
                              completion:^(BOOL finished) {
-                                 self.leftEdgePanRecognizer.touchMargin = panningView.transform.tx + kLeftPanTouchMargin;
+                                 [self.backView removeFromSuperview];
                              }];
         }
     }
 }
 
-- (void)placeBackView
+- (void)prepareBackView
 {
     [self.backView removeFromSuperview];
+    [self renderPriorViewControllerIntoBackView:self.topViewController];
     [self.backView setFrame:(CGRect){.origin=self.backView.frame.origin, .size=self.topViewController.view.frame.size}];
     [self.topViewController.view addSubview:self.backView];
 }
 
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+- (void)renderPriorViewControllerIntoBackView:(UIViewController *)viewController
 {
-    CGSize size = self.topViewController.view.frame.size;
-    UIGraphicsBeginImageContextWithOptions(size, YES, 0);
-    [self.topViewController.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    self.backView.image = image;
-    
-    [super pushViewController:viewController animated:animated];
-}
-
-- (NSArray *)popToRootViewControllerAnimated:(BOOL)animated
-{
-    [self renderForViewController:self.viewControllers[0]];
-    return [super popToRootViewControllerAnimated:animated];
-}
-
-- (NSArray *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    [self renderForViewController:viewController];
-    return [super popToViewController:viewController animated:animated];
-}
-
-- (UIViewController *)popViewControllerAnimated:(BOOL)animated
-{
-    [self renderForViewController:self.topViewController];    
-    return [super popViewControllerAnimated:animated];
-}
-
-- (void)renderForViewController:(UIViewController *)viewController
-{
-    __block NSInteger topIdx = NSNotFound;
+    __block NSInteger priorIdx = NSNotFound;
     [self.viewControllers enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if (obj == viewController) {
-            topIdx = idx;
+            priorIdx = idx - 1;
             *stop = YES;
         }
     }];
     
-    if (topIdx == NSNotFound || topIdx < 2)
+    if (priorIdx == NSNotFound || priorIdx < 0 || priorIdx >= self.viewControllers.count)
     {
         self.backView.image = nil;
     }
     else
     {
-        UIViewController *toRender = (UIViewController *)[self.viewControllers objectAtIndex:topIdx-2];
-        CGSize size = toRender.view.frame.size;
-        UIGraphicsBeginImageContextWithOptions(size, YES, 0);
-        [toRender.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        self.backView.image = image;
+        UIViewController *toRender = (UIViewController *)[self.viewControllers objectAtIndex:priorIdx];
+        [self renderViewControllerIntoBackView:toRender];
     }
+}
+
+- (void)renderViewControllerIntoBackView:(UIViewController *)viewController
+{
+    CGSize size = viewController.view.frame.size;
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+    [viewController.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.backView.image = image;
 }
 
 @end
