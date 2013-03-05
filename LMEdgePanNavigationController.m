@@ -10,6 +10,8 @@
 #import "LMEdgePanGestureRecognizer.h"
 #import <QuartzCore/QuartzCore.h>
 
+#define ASYNC_BACKVIEW_RENDER
+
 static CGFloat kLeftPanTouchMargin = 20.;
 static CGFloat kBackTransitionMinDuration = 0.1;
 static CGFloat kBackTransitionOptDuration = 0.2;
@@ -183,12 +185,22 @@ float fclampf(float x, float min, float max) {
 
 - (void)renderViewControllerIntoBackView:(UIViewController *)viewController
 {
-    CGSize size = viewController.view.frame.size;
-    UIGraphicsBeginImageContextWithOptions(size, YES, 0);
-    [viewController.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    self.backView.image = image;
+#ifdef ASYNC_BACKVIEW_RENDER
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^
+#endif
+                   {
+                       CGSize size = viewController.view.frame.size;
+                       UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+                       [viewController.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+                       UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+                       UIGraphicsEndImageContext();
+                       dispatch_async(dispatch_get_main_queue(), ^{
+                           self.backView.image = image;
+                       });
+                   }
+#ifdef ASYNC_BACKVIEW_RENDER
+                   );
+#endif
 }
 
 @end
